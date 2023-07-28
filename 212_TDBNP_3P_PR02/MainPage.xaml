@@ -1,0 +1,810 @@
+﻿<Page x:Name="page"
+    x:Class="_212_TDBNP_3P_PR02.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_212_TDBNP_3P_PR02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Storyboard x:Name="sbInteraccion1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta8" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbInteraccion2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta7" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.6000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbInteraccion3">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta6" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.9000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbInteraccion4">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta5" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.9000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbInteraccion5">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta4" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbInteracion6">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta9" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.8000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbInteracion7">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSiesta1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.1000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAbsorver1i" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.4000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.1000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAbsorver2i" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAbsorver3i" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="btnIniciar" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="00:00:02.7000000" Value="350"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04.4000000" Value="350"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btnIniciar" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="-136"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="-222.4"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04.4000000" Value="31.6"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btnIniciar" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="1.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04.4000000" Value="1.6"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="btnIniciar" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:02.7000000" Value="78"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="28"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04.4000000" Value="78"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbDormido">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs8" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Visible"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.4000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs7" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs6" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs5" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.3000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs4" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.6000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.9000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.9000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.2000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAs1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.3000000" Value="Visible"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.6000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbWalking">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.9000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06.9000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.1000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw4" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.3000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw5" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw6" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw7" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.9000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw8" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.9000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.1000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw9" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.3000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw10" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgCesped1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:07.5000000" Value="-210"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-390"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgCesped1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.01"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:07.5000000" Value="-102"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-230"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAw11" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.1000000">
+                    <DiscreteObjectKeyFrame.Value>Visible</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:09.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:07.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.5000000" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:08.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:09.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:14">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:15">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.6000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:09.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:11">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:09.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:14">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo4" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:11">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:12.5000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo5" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:12.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:14">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogoKirby" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:14">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:15">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo6" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:15">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="page" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:16" Value="Visible"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbComer">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAe1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.2000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:19.9000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.1000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAe2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.4000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:19.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:19.9000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAe3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:19.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey4" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:17.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:19.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey4" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:16.6000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:17.7000000" Value="-2.71"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:19.7000000" Value="-301.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo7" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:16.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:17.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo8" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:17.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:18.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtDialogo9" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:18.7000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:19.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="imgAflowey4" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="00:00:17.7000000" Value="230"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:19.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="imgAflowey4" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:17.7000000" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:19.7000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgAflowey4" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:17.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:19.7000000" Value="84.8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAf1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.3000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.7000000">
+                    <DiscreteObjectKeyFrame.Value>Collapsed</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgAf2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:20.5000000" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="138*"/>
+            <RowDefinition Height="354*"/>
+            <RowDefinition Height="149*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Stroke="Black" Margin="0,0,0,1" Fill="#FF5100B1"/>
+        <Rectangle Grid.Row="2" Stroke="Black" Margin="0,1,0,0" RadiusX="0.8" RadiusY="0.8" Fill="#FF4300A0"/>
+        <TextBlock HorizontalAlignment="Left" Height="62" Margin="289,36,0,0" Text="Proyecto animacion" TextWrapping="Wrap" VerticalAlignment="Top" Width="457" FontSize="48" FontWeight="Bold"/>
+        <Rectangle Stroke="Black" Fill="Black" Grid.RowSpan="3" Margin="0,137,0,148"/>
+        <Button x:Name="btnIniciar" Content="Iniciar Animación" Height="78" Grid.Row="2" Width="350" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Click="btnIniciar_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <CompositeTransform/>
+            </Button.RenderTransform>
+        </Button>
+        <Image x:Name="imgSiesta8" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Source="/Assets/kirby Sleep/sleep 8.png" Stretch="Fill"/>
+        <Image x:Name="imgSiesta7" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Stretch="Fill" Source="/Assets/kirby Sleep/sleep 7.png"/>
+        <Image x:Name="imgSiesta6" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Stretch="Fill" Source="/Assets/kirby Sleep/sleep 6.png"/>
+        <Image x:Name="imgSiesta5" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Stretch="Fill" Source="/Assets/kirby Sleep/sleep 5.png"/>
+        <Image x:Name="imgSiesta4" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Stretch="Fill" Source="/Assets/kirby Sleep/sleep 4.png"/>
+        <Image x:Name="imgSiesta9" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Source="/Assets/kirby Sleep/sleep 9.png" Stretch="Fill"/>
+        <Image x:Name="imgSiesta1" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Source="/Assets/kirby Sleep/sleep 1.png" Stretch="Fill"/>
+        <Image x:Name="imgAbsorver1i" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Source="/Assets/kirby screaming/screaming 1.png" Stretch="Fill"/>
+        <Image x:Name="imgAbsorver2i" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Source="/Assets/kirby screaming/screaming 2.png" Stretch="Fill"/>
+        <Image x:Name="imgAbsorver3i" HorizontalAlignment="Left" Height="100" Margin="202,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Source="/Assets/kirby screaming/screaming 3.png" Stretch="Fill"/>
+        <Image x:Name="imgAs8" HorizontalAlignment="Left" Height="200" Margin="92,118,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 8.png" Stretch="Fill"/>
+        <Image x:Name="imgAs7" HorizontalAlignment="Left" Height="200" Margin="92,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 7.png" Stretch="Fill"/>
+        <Image x:Name="imgAs6" HorizontalAlignment="Left" Height="200" Margin="92,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 6.png" Stretch="Fill"/>
+        <Image x:Name="imgAs5" HorizontalAlignment="Left" Height="200" Margin="92,88,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 5.png" Stretch="Fill"/>
+        <Image x:Name="imgAs4" HorizontalAlignment="Left" Height="200" Margin="92,88,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 4.png" Stretch="Fill"/>
+        <Image x:Name="imgAs3" HorizontalAlignment="Left" Height="200" Margin="92,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 3.png" Stretch="Fill"/>
+        <Image x:Name="imgAs2" HorizontalAlignment="Left" Height="200" Margin="92,94,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 2.png" Stretch="Fill"/>
+        <Image x:Name="imgAs1" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby Sleep/sleep 1.png" Stretch="Fill"/>
+        <Image x:Name="imgAw1" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 1.png" Stretch="Fill"/>
+        <Image x:Name="imgAw2" HorizontalAlignment="Left" Height="192" Margin="116,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" Source="/Assets/kirby walking/walking 2.png" Stretch="Fill"/>
+        <Image x:Name="imgAw3" HorizontalAlignment="Left" Height="223" Margin="92,67,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 3.png" Stretch="Fill"/>
+        <Image x:Name="imgAw4" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 4.png" Stretch="Fill"/>
+        <Image x:Name="imgAw5" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 5.png" Stretch="Fill"/>
+        <Image x:Name="imgAw6" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 6.png" Stretch="Fill"/>
+        <Image x:Name="imgAw7" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 7.png" Stretch="Fill"/>
+        <Image x:Name="imgAw8" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 8.png" Stretch="Fill"/>
+        <Image x:Name="imgAw9" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 9.png" Stretch="Fill"/>
+        <Image x:Name="imgAw10" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby walking/walking 10.png" Stretch="Fill"/>
+        <Image x:Name="imgAw11" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby standing/standing 1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgAe1" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby screaming/screaming 1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgAe2" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby screaming/screaming 2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgAe3" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby screaming/screaming 3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgAf1" HorizontalAlignment="Left" Height="200" Margin="74,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="248" Source="/Assets/kirby standing/standing 2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgAf2" HorizontalAlignment="Left" Height="200" Margin="92,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/kirby standing/standing 3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgCesped1" HorizontalAlignment="Left" Margin="-91,5,0,146" Width="465" Source="/Assets/cesped.png" Stretch="None" Grid.Row="1" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="txtDialogo1" HorizontalAlignment="Left" Height="62" Margin="629,45,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="¿Hay alguien ahí?"/>
+        <Image x:Name="imgAflowey" HorizontalAlignment="Left" Height="200" Margin="794,94,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/Flowey/Flowey sprite asustado.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="txtDialogo2" HorizontalAlignment="Left" Height="62" Margin="554,45,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="448" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="Oh eres solo otro monstruo"/>
+        <Image x:Name="imgAflowey2" HorizontalAlignment="Left" Height="200" Margin="568,96,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/Flowey/Flowey sprite serio.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="txtDialogo3" HorizontalAlignment="Left" Height="62" Margin="512,45,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="490" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="Estoy harto de ustedes sabes"/>
+        <Image x:Name="imgAflowey3" HorizontalAlignment="Left" Height="200" Margin="568,96,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/Flowey/Flowey sprite enojado.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="txtDialogo4" HorizontalAlignment="Left" Height="62" Margin="323,45,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="679" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="Primero el humano loco que casi me mata"/>
+        <TextBlock x:Name="txtDialogo5" HorizontalAlignment="Left" Height="62" Margin="498,45,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="425" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="Y ahora un monstruo rosa"/>
+        <TextBlock x:Name="txtDialogoKirby" HorizontalAlignment="Left" Height="62" Margin="168,51,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FocusVisualPrimaryBrush="Black" Foreground="#FFD900FF" FontSize="36" Text="Poyo"/>
+        <TextBlock x:Name="txtDialogo6" HorizontalAlignment="Left" Height="62" Margin="582,43,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="¿Que dijiste?"/>
+        <TextBlock x:Name="txtDialogo7" HorizontalAlignment="Left" Height="62" Margin="582,43,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="¿Pero qué?"/>
+        <TextBlock x:Name="txtDialogo8" HorizontalAlignment="Left" Height="62" Margin="467,43,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="!Espera podemos negociar¡"/>
+        <TextBlock x:Name="txtDialogo9" HorizontalAlignment="Left" Height="62" Margin="617,43,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FocusVisualPrimaryBrush="Black" Foreground="White" FontSize="36" Text="¡Ahhhh!"/>
+        <Image x:Name="imgAflowey4" HorizontalAlignment="Left" Height="200" Margin="568,96,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Source="/Assets/Flowey/Flowey sprite asustado.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock Margin="0,0,8,6" Grid.Row="2" TextWrapping="Wrap" FontSize="17" FontWeight="Bold" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="312"><Run Text="Hecho por: Daniel Isaí Saldaña Rocha"/><LineBreak/><Run Text="Matricula: 74949"/></TextBlock>
+        <Button Content="" Height="118" Margin="830,0,0,0" Width="150">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/sans.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
